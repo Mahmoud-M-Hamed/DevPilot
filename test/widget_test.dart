@@ -8,9 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:tutorial/main.dart';
 import 'package:tutorial/screens/my_home_page.dart';
-import 'package:tutorial/util/time_helper.dart';
 
 void main() {
   group('Widget Testing', (){
