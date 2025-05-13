@@ -57,11 +57,11 @@ android {
     productFlavors {
         create("development") {
             dimension = "default"
-            applicationIdSuffix = ".development"
+            applicationIdSuffix = ".dev"
         }
         create("production") {
             dimension = "default"
-            applicationIdSuffix = ".production"
+            //applicationIdSuffix = ".production"
         }
     }
 
