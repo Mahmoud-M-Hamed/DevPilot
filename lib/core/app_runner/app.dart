@@ -13,7 +13,7 @@ class DevPilotApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: environmentType.environment.appName,
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: (environmentType == EnvironmentType.development) ? true : false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
