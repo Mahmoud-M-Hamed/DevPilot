@@ -6,15 +6,13 @@
 // TODO 3.3: Write a test that the TimeHelper should return Evening
 // TODO 3.4: Write a test that the TimeHelper should return Night
 
-
+import 'package:dev_pilot/util/time_helper.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tutorial/util/time_helper.dart';
 
-void main(){
-
-  group('Time Helper', (){
-    group('get time of the day', (){
-      test('This Should Be Morning', (){
+void main() {
+  group('Time Helper', () {
+    group('get time of the day', () {
+      test('This Should Be Morning', () {
         //arrange
         final currentTime = DateTime(2025, 01, 01, 8, 00);
         //act
@@ -23,7 +21,7 @@ void main(){
         expect(timeOfDay, 'Morning');
       });
 
-      test('This Should Be Afternoon', (){
+      test('This Should Be Afternoon', () {
         //Arrange
         final DateTime currentTime = DateTime(2025, 04, 08, 13);
         //Act
@@ -32,7 +30,7 @@ void main(){
         expect(timeOfDay, 'Afternoon');
       });
 
-      test('This Should Be Night', (){
+      test('This Should Be Night', () {
         //Arrange
         final DateTime currentTime = DateTime(2025, 04, 08, 2);
         //Act
@@ -41,7 +39,7 @@ void main(){
         expect(timeOfDay, 'Night');
       });
 
-      test('This Should Be Evening', (){
+      test('This Should Be Evening', () {
         //Arrange
         final DateTime currentTime = DateTime(2025, 04, 08, 23);
         //Act
@@ -51,5 +49,4 @@ void main(){
       });
     });
   });
-
 }

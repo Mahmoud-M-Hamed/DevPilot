@@ -1,4 +1,4 @@
-import 'package:tutorial/core/main/environment_type.dart';
+import 'package:dev_pilot/core/main/environment_type.dart';
 
 import '../app_runner/app_runner.dart';
 
