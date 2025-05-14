@@ -5,22 +5,21 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:dev_pilot/screens/my_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:tutorial/screens/my_home_page.dart';
-
 void main() {
-  group('Widget Testing', (){
-
+  group('Widget Testing', () {
     testWidgets('Widget Testing', (WidgetTester tester) async {
       final fixedTime = DateTime(2023, 1, 1, 14); // 2 PM = Afternoon
       const String expectedImagePath = 'assets/images/Afternoon.jpg';
 
-
-      await tester.pumpWidget(MaterialApp(
-        home: MyHomePage(currentTime: fixedTime),
-      ),);
+      await tester.pumpWidget(
+        MaterialApp(
+          home: MyHomePage(currentTime: fixedTime),
+        ),
+      );
 
       final container = tester.widget<Container>(find.byType(Container));
 
@@ -29,8 +28,6 @@ void main() {
       final imageProvider = image.image as AssetImage;
 
       expect(imageProvider.assetName, expectedImagePath);
-
     });
-
   });
 }

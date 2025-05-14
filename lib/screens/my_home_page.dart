@@ -1,5 +1,5 @@
+import 'package:dev_pilot/util/time_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:tutorial/util/time_helper.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.currentTime});
@@ -13,8 +13,8 @@ class MyHomePage extends StatelessWidget {
         height: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image:
-                AssetImage("assets/images/${TimeHelper.getTimeOfTheDay(time: currentTime)}.jpg"),
+            image: AssetImage(
+                "assets/images/${TimeHelper.getTimeOfTheDay(time: currentTime)}.jpg"),
             fit: BoxFit.cover,
           ),
         ),
