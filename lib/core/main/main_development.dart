@@ -1,5 +1,5 @@
-import 'package:tutorial/core/app_runner/app_runner.dart';
-import 'package:tutorial/core/main/environment_type.dart';
+import 'package:dev_pilot/core/app_runner/app_runner.dart';
+import 'package:dev_pilot/core/main/environment_type.dart';
 
 Future<void> main() async {
   EnvironmentType environmentType = EnvironmentType.development;

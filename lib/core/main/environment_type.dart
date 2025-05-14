@@ -1,4 +1,4 @@
-import 'package:tutorial/core/main/base_app_environment.dart';
+import 'package:dev_pilot/core/main/base_app_environment.dart';
 
 enum EnvironmentType {
   production(
